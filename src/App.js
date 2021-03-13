@@ -9,10 +9,10 @@ import './index.css'
 const App = () => {
   return (
       <>
-          <Header title={'This is title'} descr={'This is Description!'}/>
-          <Layout title={'Заголовок 1'} descr={'Описание 1'} urlBg={BG_1} colorBg={'red'}/>
+          <Header title="This is title" descr="This is Description!"/>
+          <Layout title={'Заголовок 1'} descr={'Описание 1'} urlBg={BG_1} />
           <Layout title={'Заголовок 2'} descr={'Описание 2'} urlBg colorBg={'green'}/>
-          <Layout title={'Заголовок 3'} descr={'Описание 3'} urlBg={BG_3} colorBg={'blue'}/>
+          <Layout title={'Заголовок 3'} descr={'Описание 3'} urlBg={BG_3} />
           <Footer />
       </>
   );

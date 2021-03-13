@@ -1,13 +1,13 @@
 import style from './style.module.css'
 
-const Layout = ({title, descr, urlBg, colorBg}) => {
-    const styleInline = {
-        backgroundImage: `url(${urlBg})`,
-        backgroundColor: colorBg,
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat'
+const Layout = ({title, descr, urlBg = false, colorBg = false}) => {
+    let styleInline = {};
+    if (urlBg) {
+        styleInline.backgroundImage = `url(${urlBg})`
     };
-    console.log(urlBg);
+    if (colorBg) {
+        styleInline.backgroundColor = colorBg
+    };
     return (
         <section className={style.root} style={styleInline}>
             <div className={style.wrapper}>
