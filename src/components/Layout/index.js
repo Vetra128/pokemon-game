@@ -1,6 +1,6 @@
 import style from './style.module.css'
 
-const Layout = ({title, descr, urlBg = false, colorBg = false}) => {
+const Layout = ({title, descr, urlBg = false, colorBg = false, children}) => {
     let styleInline = {};
     if (urlBg) {
         styleInline.backgroundImage = `url(${urlBg})`
@@ -19,9 +19,7 @@ const Layout = ({title, descr, urlBg = false, colorBg = false}) => {
                         <span className={style.separator}></span>
                     </div>
                     <div className={style.desc + ' ' + style.full}>
-                        <p>
-                            {descr}
-                        </p>
+                        {children}
                     </div>
                 </article>
             </div>
